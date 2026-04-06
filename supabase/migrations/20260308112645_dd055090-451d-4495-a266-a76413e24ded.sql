@@ -1,0 +1,1 @@
+ALTER TABLE public.quizzes ALTER COLUMN time_limit_seconds SET DEFAULT 30;

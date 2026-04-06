@@ -1,0 +1,1 @@
+ALTER TABLE public.arena_participants ADD COLUMN current_question_index integer NOT NULL DEFAULT 0;

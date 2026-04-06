@@ -1,0 +1,1 @@
+ALTER TABLE public.arena_participants ADD COLUMN question_started_at timestamp with time zone;

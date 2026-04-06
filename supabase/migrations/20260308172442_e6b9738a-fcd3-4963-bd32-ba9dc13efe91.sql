@@ -1,0 +1,1 @@
+UPDATE arena_matches SET status = 'finished', finished_at = now() WHERE id = 'acffccfc-de53-4507-89c0-4b68cbcf1ad2' AND status != 'finished';
