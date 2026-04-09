@@ -1,6 +1,6 @@
-# GreedierArena
+# GreedyArena
 
-Self-managed Vite + React + Supabase project.
+Vite + React + Supabase project.
 
 ## Local development
 
