@@ -63,4 +63,3 @@ supabase db push
 - `npm run preview` - preview production build
 - `npm run test` - run tests
 
-## Test Run
