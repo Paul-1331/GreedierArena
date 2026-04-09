@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Trophy, Search, GraduationCap, Swords, PenTool, Menu, X, LogOut, User } from "lucide-react";
+import { Search, GraduationCap, Swords, PenTool, Menu, X, LogOut, User } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2 font-display text-xl font-bold text-primary">
-          <Trophy className="h-6 w-6" />
+          <img src="/logo.png" alt="GreedyArena logo" className="h-6 w-6 object-contain" />
           GreedyArena
         </Link>
 
