@@ -308,8 +308,8 @@ const ArenaPlay = () => {
   const isAnswerCorrect = (questionType: string, correctAnswer: number | number[], userAnswer: number | number[] | string): boolean => {
     if (questionType === "single_mcq") return userAnswer === correctAnswer;
     if (questionType === "multi_select") {
-      const correct = (correctAnswer as number[]).slice().sort();
-      const selected = (userAnswer as number[]).slice().sort();
+      const correct = (correctAnswer as number[]).slice().sort((a, b) => a - b);
+      const selected = (userAnswer as number[]).slice().sort((a, b) => a - b);
       return correct.length === selected.length && correct.every((v, i) => v === selected[i]);
     }
     if (questionType === "numeric") return Number(userAnswer) === Number(correctAnswer);
